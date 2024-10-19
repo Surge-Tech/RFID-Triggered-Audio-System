@@ -1,4 +1,5 @@
 
+
 # RFID-Triggered-Audio-System
 This project is an RFID-based audio player that uses an OLED display for user feedback. When an authorized RFID tag is scanned, a corresponding audio file is played through the DFPlayer Mini. The OLED screen provides status updates throughout the process.
 
@@ -25,23 +26,22 @@ DFPlayer Mini with an SD card containing the audio files
 Microcontroller (ESP32, Arduino)
 
 #### Pin Connections for Arduino Uno:
-OLED GND GND
-OLED VCC 5V
-OLED (SCL) SCK	A5
-OLED SDA A4
+* OLED GND GND
+* OLED VCC 5V
+* OLED (SCL) SCK	A5
+* OLED SDA A4
+* RFID RST 9
+* RFID SDA 10
+* DFPlayer Mini RX 4
+* DFPlayer Mini TX 5 **1kOhm resistor inbetween**.
+* DFPlayer Mini BUSY 6
 
-RFID RST 9
-RFID SDA 10
-More pinouts can be found on the [RC522 GitHub](https://github.com/miguelbalboa/rfid?tab=readme-ov-file#id24).
-
-DFPlayer Mini RX 4
-DFPlayer Mini TX 5 **1kOhm resistor inbetween**.
-DFPlayer Mini BUSY 6
+More pinouts for the RFID module can be found on the [RC522 GitHub](https://github.com/miguelbalboa/rfid?tab=readme-ov-file#id24).
 Note: You can modify pin numbers according to your setup if needed.
 
 ## Wiring Diagram
 
-Insert wiring diagram here.
+Insert wiring diagram here. (Future update)
 
 ## How to Use
 Prepare the RFID Tags:
