@@ -25,18 +25,18 @@ DFPlayer Mini with an SD card containing the audio files
 Microcontroller (ESP32, Arduino)
 
 #### Pin Connections for Arduino Uno:
-OLED GND  GND
-OLED VCC  5V
-OLED (SCL)	SCK	A5
-OLED SDA  A4
+OLED GND GND
+OLED VCC 5V
+OLED (SCL) SCK	A5
+OLED SDA A4
 
-RFID RST	9
-RFID SDA	10
+RFID RST 9
+RFID SDA 10
 More pinouts can be found on the [RC522 GitHub](https://github.com/miguelbalboa/rfid?tab=readme-ov-file#id24).
 
-DFPlayer Mini RX	4
-DFPlayer Mini TX	5 **1kOhm resistor inbetween**.
-DFPlayer Mini BUSY	6
+DFPlayer Mini RX 4
+DFPlayer Mini TX 5 **1kOhm resistor inbetween**.
+DFPlayer Mini BUSY 6
 Note: You can modify pin numbers according to your setup if needed.
 
 ## Wiring Diagram
