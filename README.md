@@ -67,6 +67,8 @@ Included example audio files in the audio folder. I do not own any of the sounds
 ## Examples:
 The original idea for this project was to be implimented as a mobile device to scan prop audio survalence devices in an escape room. 
 
+Can be hooked up to an amplifier and used as a stand-alone audio player. 
+
 ## Future Improvements
 Implement additional features such as multi-language support for the OLED messages.
 Add support for multiple audio files per tag, cycling through tracks.
