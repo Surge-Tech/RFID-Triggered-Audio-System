@@ -41,10 +41,9 @@ Note: You can modify DFPlayerMini pins numbers according to your setup if needed
 
 Using an Arduino Nano
 
-* [DFPlayerMini Pinout](https://lab.arts.ac.uk/uploads/images/gallery/2022-11/aquNhFLaNisOaPu5-dfplayerpinout.png)
-* [OLED Screen Pinout](https://electropeak.com/learn/wp-content/uploads/2020/12/OLED-0.91INCH-pin.jpg)
-* [RFID-RC522 Pinout](https://www.electrovigyan.com/wp-content/uploads/2021/04/pinout.jpg)
-
+* <a href="https://lab.arts.ac.uk/uploads/images/gallery/2022-11/aquNhFLaNisOaPu5-dfplayerpinout.png" target="_blank">DFPlayerMini Pinout</a>
+* <a href="https://electropeak.com/learn/wp-content/uploads/2020/12/OLED-0.91INCH-pin.jpg" target="_blank">OLED Screen Pinout</a>
+* <a href="https://www.electrovigyan.com/wp-content/uploads/2021/04/pinout.jpg" target="_blank">RFID-RC522 Pinout</a>
 
 ## How to Use
 #### Prepare the RFID Tags:
