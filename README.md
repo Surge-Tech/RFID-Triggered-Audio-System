@@ -38,6 +38,7 @@ Note: You can modify DFPlayerMini pins numbers according to your setup if needed
 ## Wiring Diagram
 
 ![Schematic](https://github.com/user-attachments/assets/5ef1caef-6a3c-463e-a8b5-e1f78cf70442)
+
 Using an Arduino Nano
 
 * [DFPlayerMini Pinout](https://lab.arts.ac.uk/uploads/images/gallery/2022-11/aquNhFLaNisOaPu5-dfplayerpinout.png)
