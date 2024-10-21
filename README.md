@@ -38,6 +38,9 @@ Note: You can modify DFPlayerMini pins numbers according to your setup if needed
 ## Wiring Diagram
 
 Insert wiring diagram here. (Future update)
+[DFPlayerMini Pinout](https://lab.arts.ac.uk/uploads/images/gallery/2022-11/aquNhFLaNisOaPu5-dfplayerpinout.png)
+[OLED Screen Pinout](https://electropeak.com/learn/wp-content/uploads/2020/12/OLED-0.91INCH-pin.jpg)
+
 
 ## How to Use
 #### Prepare the RFID Tags:
