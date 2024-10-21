@@ -37,9 +37,12 @@ Note: You can modify DFPlayerMini pins numbers according to your setup if needed
 
 ## Wiring Diagram
 
-Insert wiring diagram here. (Future update)
-[DFPlayerMini Pinout](https://lab.arts.ac.uk/uploads/images/gallery/2022-11/aquNhFLaNisOaPu5-dfplayerpinout.png)
-[OLED Screen Pinout](https://electropeak.com/learn/wp-content/uploads/2020/12/OLED-0.91INCH-pin.jpg)
+![Schematic](https://github.com/user-attachments/assets/5ef1caef-6a3c-463e-a8b5-e1f78cf70442)
+Using an Arduino Nano
+
+* [DFPlayerMini Pinout](https://lab.arts.ac.uk/uploads/images/gallery/2022-11/aquNhFLaNisOaPu5-dfplayerpinout.png)
+* [OLED Screen Pinout](https://electropeak.com/learn/wp-content/uploads/2020/12/OLED-0.91INCH-pin.jpg)
+* [RFID-RC522 Pinout](https://www.electrovigyan.com/wp-content/uploads/2021/04/pinout.jpg)
 
 
 ## How to Use
