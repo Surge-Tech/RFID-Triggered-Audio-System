@@ -32,7 +32,7 @@ Microcontroller (ESP32/Arduino)
 * DFPlayer Mini TX 5 **1kOhm resistor inbetween**.
 * DFPlayer Mini BUSY 6
 
-More pinouts for the RFID module can be found on the [RC522 GitHub](https://github.com/miguelbalboa/rfid?tab=readme-ov-file#id24).
+More pinouts for the RFID module can be found on the [RC522 GitHub](https://github.com/miguelbalboa/rfid?tab=readme-ov-file#pin-layout
 Note: You can modify DFPlayerMini pins numbers according to your setup if needed.
 
 ## Wiring Diagram
