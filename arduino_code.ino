@@ -35,8 +35,8 @@ static const unsigned char PROGMEM logo_bmp[] =
   0b00000000, 0b00110000 };
 
 // Declaration for RFID scanner
-#define RST_PIN        9 // Configurable, see typical pin layout above
-#define SS_PIN         10 // Configurable, see typical pin layout above
+#define RST_PIN        9 // Configurable
+#define SS_PIN         10 // Configurable
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);  // Create MFRC522 instance
 
@@ -71,7 +71,7 @@ DFRobotDFPlayerMini myDFPlayer;
 
 
 void setup() {
-  Serial.begin(4800); // For debugging
+  // Busy pin is used as a Currently Playing signal
   pinMode(BUSY_PIN, INPUT);
 
   // Initialize serial communications with the DFPlayer
@@ -83,14 +83,14 @@ void setup() {
     for(;;); // Don't proceed, loop forever
   }
 
-  SPI.begin();			// Init SPI bus
-	mfrc522.PCD_Init();		// Init MFRC522
-	delay(400);				// Optional delay. Some board do need more time after init to be ready
+  SPI.begin(); // Init SPI bus
+	mfrc522.PCD_Init(); // Init MFRC522
+	delay(400); // Optional delay. Some board do need more time after init to be ready
 
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen
   display.display();
-  delay(1000); // Pause for 2 seconds
+  delay(1000); // Pause for 1 second
   // Clear the buffer
   display.clearDisplay();
   delay(1000);
@@ -107,11 +107,12 @@ void setup() {
   // Initialize the DF Player
   myDFPlayer.begin(mySoftware, true, false);
   myDFPlayer.volume(12); // Set volume value (0-30)
+  // For higher volumes I reccomend using a deticated power supply and amplifier
 
   // Write on screen that everything is working
   display.clearDisplay();
   display.setCursor(0, 0);
-  display.print("Audio System Online..");
+  display.print("Audio System Online.");
   display.display();
   delay(1000);
 
@@ -125,12 +126,12 @@ void setup() {
 void loop() {
   busyState = digitalRead(BUSY_PIN);
   if (busyState == LOW) {
-    // wait for audio to stop playing
+    // wait for audio to stop playing before doing anything else
     return;
   }
 
   // Check for new RFID tag
-	// Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle
+  // Reset the loop if no new card present on the sensor/reader. This saves the entire process when idle
   if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCard()) {
 		return;
 	}
@@ -150,7 +151,7 @@ void loop() {
     display.clearDisplay();
     display.setCursor(0, 0);
     display.println("ERROR: Unrecognized.");
-    display.println("Bug compromised.");
+    display.println("Tag compromised.");
     display.display();
   }
 
@@ -185,7 +186,7 @@ bool compareUID(byte *uid1, byte *uid2) {
 void playAudio(int trackNumber) {
   display.clearDisplay();
   display.setCursor(0, 0);
-  display.print("Playing from bug #");
+  display.print("Playing from tag #");
   display.println(trackNumber);
   display.display();
   myDFPlayer.play(trackNumber);  // Play specific track
