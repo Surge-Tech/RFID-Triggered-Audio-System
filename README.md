@@ -1,7 +1,7 @@
 # RFID-Triggered-Audio-System
 This project is an RFID-based audio player that uses an OLED display for user feedback. When an authorized RFID tag is scanned, a corresponding audio file is played through the DFPlayer Mini. The OLED screen provides status updates throughout the process.
 
-For a detailed guide on building this project visit the instructables page here.
+For a detailed guide on building this project visit the [Instructables Page](https://www.instructables.com/RFID-Triggered-Audio-System/).
 
 ## Features
 OLED Display for visual feedback (Adafruit SSD1306 128x32).
